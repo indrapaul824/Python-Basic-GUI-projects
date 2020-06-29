@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>561</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 60, 140);
+font: 32pt &quot;MS Sans Serif&quot;;
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Calculator">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>661</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 4px;
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Basic Caculator</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>240</y>
+      <width>271</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 217, 217);
+color: rgb(0, 0, 0);
+text-align: center;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(89, 255, 250);
+color: rgb(70, 0, 0);
+
+font: 18pt &quot;Lucida Sans Unicode&quot;;
+text-align: center;</string>
+    </property>
+    <property name="text">
+     <string>Input both Num---&gt;Select operand</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>495</width>
+      <height>229</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <widget class="QPushButton" name="button_mul">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="button_add">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="button_sub">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="button_exp">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>^</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="button_pc">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Rem</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="button_div">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(38, 255, 176);
+color: rgb(0, 0, 0);
+font: 50pt &quot;Expressway&quot;;</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>521</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLineEdit" name="input1">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(217, 217, 217);
+color: rgb(0, 0, 0);
+font: 32pt &quot;Lucida Sans Unicode&quot;;
+text-align: center;</string>
+       </property>
+       <property name="text">
+        <string>*Num1*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="operator_2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(217, 217, 217);
+color: rgb(0, 0, 0);
+font: 22pt &quot;Lucida Sans Unicode&quot;;
+text-align: center;</string>
+       </property>
+       <property name="text">
+        <string>*OP*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="input2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(217, 217, 217);
+color: rgb(0, 0, 0);
+font: 32pt &quot;Lucida Sans Unicode&quot;;
+text-align: center;</string>
+       </property>
+       <property name="text">
+        <string>*Num2*</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
